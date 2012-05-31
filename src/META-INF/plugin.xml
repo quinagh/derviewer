@@ -1,0 +1,37 @@
+<idea-plugin>
+    <!-- Plugin name -->
+    <name>DERViewer</name>
+
+    <!-- Description -->
+    <description>DER Viewer</description>
+
+    <!-- Plugin version -->
+    <version>1.0</version>
+
+    <!-- Plugin's vendor -->
+    <vendor>Kevin O'Regan</vendor>
+
+    <!-- Minimum and maximum IDEA version plugin is supposed to work with -->
+    <idea-version min="3.0" max="3.1"/>
+
+    <!-- Plugin's application components -->
+    <project-components>
+        <component>
+            <!-- Component's implementation class -->
+            <implementation-class>org.oregan.idea.ASN1Viewer</implementation-class>
+
+            <!-- Component's interface class -->
+            <interface-class>org.oregan.idea.ASN1Viewer</interface-class>
+        </component>
+    </project-components>
+
+    <actions>
+        <group id="ore.oregan.idea.DERViewer.AddPopupMenu" text="ASN.1 Viewer" popup="true">
+            <action id="view" class="org.oregan.idea.SimpleAction" text="View" description="Show parsed asn.1 in toolwindow."/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+            <add-to-group group-id="CommanderPopupMenu" anchor="last"/>
+        </group>
+
+    </actions>
+
+</idea-plugin>
