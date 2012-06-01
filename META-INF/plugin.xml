@@ -3,16 +3,16 @@
     <name>DERViewer</name>
 
     <!-- Description -->
-    <description>DER Viewer</description>
+    <description>DER Viewer is a plugin to inspect ASN.1 structures encoded under DER (Distinguished Encoding Rules)</description>
 
     <!-- Plugin version -->
-    <version>1.0</version>
+    <version>1.1</version>
 
     <!-- Plugin's vendor -->
     <vendor>Kevin O'Regan</vendor>
 
     <!-- Minimum and maximum IDEA version plugin is supposed to work with -->
-    <idea-version min="3.0" max="3.1"/>
+    <idea-version  since-build="111.24"/>
 
     <!-- Plugin's application components -->
     <project-components>

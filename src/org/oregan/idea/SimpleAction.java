@@ -18,7 +18,7 @@ public class SimpleAction extends AnAction
         VirtualFile file = (VirtualFile) anActionEvent.getDataContext().getData("virtualFile");
         Project project = ProjectManager.getInstance().getOpenProjects()[0];
 
-        Class[] components = project.getComponentInterfaces();
+//        Class[] components = project.getComponentInterfaces();
         ASN1Viewer viewer = (ASN1Viewer) project.getComponent(ASN1Viewer.class);
 
         viewer.loadFile(file.getPath());

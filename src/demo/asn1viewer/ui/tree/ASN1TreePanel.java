@@ -221,7 +221,7 @@ public class ASN1TreePanel extends JPanel
         scroller.setViewportBorder(new EmptyBorder(0, 0, 0, 0));
 
         treePanel.add(scroller, BorderLayout.CENTER);
-        this.statusLabel = new JLabel("© Kevin O'Regan 2003.");
+        this.statusLabel = new JLabel("Kevin O'Regan 2003.");
 
         treePanel.add(statusLabel, BorderLayout.SOUTH);
 
